@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="./styles.css" />
+		<title>Cryptocurrency Ranking</title>
+	</head>
+	<body>
+		<nav class="nav">
+			<div class="nav__container">
+			    <a href="#" class="nav__logo">Crypto Ranking</a>
+    			<form class="form">
+    				<input
+    					class="form__input"
+    					type="search"
+    					id="input-search"
+    					placeholder="Search"
+						list="coin-search"
+    				/>
+					<datalist id="coin-search">
+					</datalist>
+    				<button class="form__btn" type="submit" id="input-btn">Search</button>
+			</div>
+			</form>
+		</nav>
+		<main class="main">
+			<table class="table">
+				<tr class="table__head">
+					<th class="table__title col1">RANK</th>
+					<th class="table__title col2">NAME</th>
+					<th class="table__title col5">SYMBOL</th>
+					<th class="table__title col3">BTC-PRICE</th>
+					<th class="table__title col4">PRICE</th>
+					<th class="table__title col6">24 H</th>
+				</tr>
+				<tbody id="table-body"></tbody>
+			</table>
+		</main>
+		<script src="./app.js"></script>
+	</body>
+</html>
