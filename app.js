@@ -1,5 +1,5 @@
 const baseUrl = "https://api.coinranking.com/v2/coins";
-const proxyURL = "https://cors.bridged.cc/";
+const proxyURL = "https://cors-anywhere.herokuapp.com/";
 const apiKey = "coinrankingba20991b91054d46fa9c2753bd61750279be2edc9686ffe6";
 const tableBody = document.querySelector("#table-body");
 const inputSearch = document.querySelector("#input-search");
