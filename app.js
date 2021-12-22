@@ -10,12 +10,13 @@ let coins = [];
 let search = [];
 
 async function getData() {
-	fetch(`${proxyURL}${baseUrl}`, {
+	fetch(`${baseUrl}`, {
 		method: "GET",
 		headers: {
 			"Content-Type": "application/json",
 			"x-access-token": `${apiKey}`,
-			"Access-Control-Allow-Origin": "*",
+			"Access-Control-Allow-Origin":
+				"https://fraan-nz.github.io/cryptocurrency-dashboard/",
 		},
 	})
 		.then((response) => {
