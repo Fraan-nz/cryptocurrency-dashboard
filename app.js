@@ -16,7 +16,7 @@ async function getData() {
 			"Content-Type": "application/json",
 			"x-access-token": `${apiKey}`,
 			"Access-Control-Allow-Origin":
-				"https://fraan-nz.github.io/cryptocurrency-dashboard/",
+				"*",
 		},
 	})
 		.then((response) => {
