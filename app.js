@@ -10,13 +10,12 @@ let coins = [];
 let search = [];
 
 async function getData() {
-	fetch(`${baseUrl}`, {
+	fetch(`${proxyURL}${baseUrl}`, {
 		method: "GET",
 		headers: {
 			"Content-Type": "application/json",
 			"x-access-token": `${apiKey}`,
-			"Access-Control-Allow-Origin":
-				"*",
+			"Access-Control-Allow-Origin":"*",
 		},
 	})
 		.then((response) => {
